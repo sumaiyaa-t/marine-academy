@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Admin Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.admin-content.dashboard.index');
-});
 
 Auth::routes();
 
@@ -27,6 +24,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::middleware('auth')->prefix('admin')->group(function () {
+
+
+    //    ------------------------------------------------------ Sliders ------------------------------------------------------
+
+    Route::resource('dashboard', "DashboardController");
+
+//    ------------------------------------------------------ Sliders ------------------------------------------------------
 
 //    ------------------------------------------------------ Sliders ------------------------------------------------------
 
@@ -81,6 +85,14 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('team', "TeamController");
 
 // ---------------------------------------------------------- Team --------------------------------------------------------
+
+    // ------------------------------------------------------ Logout --------------------------------------------------------
+
+    Route::get('logout', function (){
+        \auth()->logout();
+        return redirect('/');
+    })->name('logout');
+// ---------------------------------------------------------- Logout --------------------------------------------------------
 
 
 });
