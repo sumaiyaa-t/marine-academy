@@ -39,12 +39,12 @@
                     <div class="col-lg-6 header-top-left-part">
                 <span class="address"
                 ><i class="webexflaticon flaticon-call"></i>
-                  +880255013401-3</span
+                  {{ \App\Contact::first()->phone ?? 'No Info' }}</span
                 >
                         <span class="phone"
                         ><i class="webexflaticon flaticon-send"></i
-                            ><a href="mailto:example@gmail.com"
-                            >info@inflexionpointbd.com</a
+                            ><a href="{{ \App\Contact::first()->email ?? 'No Info' }}"
+                            >{{ \App\Contact::first()->email ?? 'No Info' }}</a
                             ></span
                         >
                     </div>
@@ -70,16 +70,8 @@
             <div class="insuren-custom-container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a
-                            class="navbar-brand logo f-left mrt-10 mrt-md-0"
-                            href="index.html"
-                        >
-                            <img
-                                id="logo-image"
-                                class="img-center logo-image-style"
-                                src="{{ asset('images/inf-logo.png') }}"
-                                alt=""
-                            />
+                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">
+                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.png') }}" alt="">
                         </a>
                         <div class="mobile-menu-right"></div>
                         <div class="header-searchbox-style-two d-none d-xl-block">
@@ -108,36 +100,36 @@
                           <span
                               class="fa fa-map-marker-alt mrr-10 text-primary-color"
                           ></span
-                          >Suite #201 (2nd floor) Navana-DH Tower, Plot-6,
-                                            Panthapath Lane, Karwan Bazar Dhaka-1215
+                          >{{ \App\Contact::first()->address ?? 'No Info' }}
                                         </li>
                                         <li>
                           <span
                               class="fas fa-envelope mrr-10 text-primary-color"
                           ></span
-                          ><a href="mailto:info@inflexionpointbd.com"
-                                            >info@inflexionpointbd.com</a
+                          ><a href="{{ \App\Contact::first()->email ?? 'No Info' }}"
+                                            >{{ \App\Contact::first()->email ?? 'No Info' }}</a
                                             >
                                         </li>
                                         <li>
                           <span
                               class="fas fa-phone-alt mrr-10 text-primary-color"
                           ></span
-                          ><a href="tel:+880255013401-3">+880255013401-3</a>
+                          ><a href="{{ \App\Contact::first()->phone ?? 'No Info' }}">{{ \App\Contact::first()->phone ?? 'No Info' }}</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <h4 class="mrb-15">Social List</h4>
-                            <ul class="social-list">
-                                <li>
-                                    <a
-                                        href="https://www.linkedin.com/company/inflexionpoint-technologies-bd-ltd/"
-                                        target="_blank"
-                                    ><i class="fab fa-linkedin"></i
-                                        ></a>
-                                </li>
-                            </ul>
+
+{{--                            <h4 class="mrb-15">Social List</h4>--}}
+{{--                            <ul class="social-list">--}}
+{{--                                <li>--}}
+{{--                                    <a--}}
+{{--                                        href="https://www.linkedin.com/company/inflexionpoint-technologies-bd-ltd/"--}}
+{{--                                        target="_blank"--}}
+{{--                                    ><i class="fab fa-linkedin"></i--}}
+{{--                                        ></a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu-right">
@@ -148,9 +140,9 @@
                                     <li class="">
                                         <a href="./page-about.html">Platforms</a>
                                     </li>
-                                    <li class="">
-                                        <a href="./page-solutions.html">About</a>
-                                    </li>
+{{--                                    <li class="">--}}
+{{--                                        <a href="./page-solutions.html">About</a>--}}
+{{--                                    </li>--}}
                                     <li class="">
                                         <a href="./page-solutions.html">Ecosystem</a>
                                     </li>

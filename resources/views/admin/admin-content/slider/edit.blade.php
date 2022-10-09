@@ -70,7 +70,7 @@
                 <div class="form-group">
                     <select class="form-control" aria-label="Default select example" name="location">
                         <option value="home" @if($slider->location =='home') selected @endif>Home</option>
-                        <option value="about" @if($slider->location =='about') selected @endif>About</option>
+                        <option value="ecosystem" @if($slider->location =='ecosystem') selected @endif>Ecosystem</option>
                         <option value="platform" @if($slider->location =='platform') selected @endif>Platforms</option>
                         <option value="contact" @if($slider->location =='contact') selected @endif>Contact Us</option>
                     </select>

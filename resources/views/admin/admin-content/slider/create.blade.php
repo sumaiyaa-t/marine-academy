@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <select class="form-control" aria-label="Default select example" name="location">
                         <option value="home" selected>Home</option>
-                        <option value="about">About</option>
+                        <option value="ecosystem">Ecosystems</option>
                         <option value="platform">Platforms</option>
                         <option value="contact">Contact Us</option>
                     </select>

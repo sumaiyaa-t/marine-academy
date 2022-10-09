@@ -42,7 +42,7 @@ class AchievementController extends Controller
             'content_bn' => 'required',
             'content_en' => 'required',
             'tag' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'required|mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {
@@ -91,7 +91,7 @@ class AchievementController extends Controller
             'content_bn' => 'required',
             'content_en' => 'required',
             'tag' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {
