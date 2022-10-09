@@ -51,7 +51,7 @@
                                 </p>
                                 <div class="btn-box">
                                     <a
-                                        href="page-about.html"
+                                        href="{{ url($slider->location) }}"
                                         class="cs-btn-one btn-primary-color"
                                     >Read More</a
                                     ><br/><br/><br/><br/>

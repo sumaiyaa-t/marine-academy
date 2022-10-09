@@ -65,14 +65,25 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+{{--                <div class="form-group">--}}
+{{--                    <select class="form-control" aria-label="Default select example" name="location">--}}
+{{--                        <option value="home" selected>Home</option>--}}
+{{--                        <option value="ecosystem">Ecosystems</option>--}}
+{{--                        <option value="platform">Platforms</option>--}}
+{{--                        <option value="contact">Contact Us</option>--}}
+{{--                    </select>--}}
+{{--                </div>--}}
+
                 <div class="form-group">
-                    <select class="form-control" aria-label="Default select example" name="location">
-                        <option value="home" selected>Home</option>
-                        <option value="ecosystem">Ecosystems</option>
-                        <option value="platform">Platforms</option>
-                        <option value="contact">Contact Us</option>
-                    </select>
+                    <label for="exampleInputEmail1">Enter url location</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter url location" name="location"
+                           class="form-control @error('location') is-invalid @enderror">
                 </div>
+
+                @error('location')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
 
 
                 <button type="submit" class="btn btn-primary">Submit</button>

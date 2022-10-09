@@ -67,14 +67,26 @@
                 @enderror
 
 
+{{--                <div class="form-group">--}}
+{{--                    <select class="form-control" aria-label="Default select example" name="location">--}}
+{{--                        <option value="home" @if($slider->location =='home') selected @endif>Home</option>--}}
+{{--                        <option value="ecosystem" @if($slider->location =='ecosystem') selected @endif>Ecosystem</option>--}}
+{{--                        <option value="platform" @if($slider->location =='platform') selected @endif>Platforms</option>--}}
+{{--                        <option value="contact" @if($slider->location =='contact') selected @endif>Contact Us</option>--}}
+{{--                    </select>--}}
+{{--                </div>--}}
+
+
                 <div class="form-group">
-                    <select class="form-control" aria-label="Default select example" name="location">
-                        <option value="home" @if($slider->location =='home') selected @endif>Home</option>
-                        <option value="ecosystem" @if($slider->location =='ecosystem') selected @endif>Ecosystem</option>
-                        <option value="platform" @if($slider->location =='platform') selected @endif>Platforms</option>
-                        <option value="contact" @if($slider->location =='contact') selected @endif>Contact Us</option>
-                    </select>
+                    <label for="exampleInputEmail1">Enter url location</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter url location" name="location"
+                           class="form-control @error('location') is-invalid @enderror" value="{{ $slider->location }}">
                 </div>
+
+                @error('location')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
 
 
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
