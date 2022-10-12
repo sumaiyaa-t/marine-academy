@@ -87,7 +87,7 @@
                       target="_blank"
                       href="#"
                   >
-                    Samak</a
+                    Samak Technologies</a
                   >
                   ©
                   <script>

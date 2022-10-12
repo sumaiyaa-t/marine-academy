@@ -12,7 +12,7 @@
     />
     <title>Samak Technologies BD Ltd.</title>
     <link
-        href="{{ asset('images/android-chrome-512x512.png') }}"
+        href=""
         rel="shortcut icon"
         type="image/png"
     />
@@ -129,24 +129,6 @@
 
                 @endforeach
 
-
-                {{--                <div class="col-xl-4 col-lg-4 col-md-6">--}}
-                {{--                    <div class="features-item">--}}
-                {{--                        <div class="features-inner">--}}
-                {{--                            <div class="features-shape">--}}
-                {{--                                <img src="{{ asset('images/objects/6.png') }}" alt=""/>--}}
-                {{--                            </div>--}}
-                {{--                            <div class="features-count"></div>--}}
-                {{--                            <i class="features-icon webexflaticon flaticon-handshake"></i>--}}
-                {{--                            <h4 class="features-title">Our Vision</h4>--}}
-                {{--                            <p class="features-description" style="text-align: justify">--}}
-                {{--                                To build an end-to-end technology-led ecosystem through--}}
-                {{--                                customer-centric solutions to stimulate sustainable--}}
-                {{--                                agriculture.--}}
-                {{--                            </p>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
                 <div class="col"></div>
 
             </div>
@@ -156,42 +138,6 @@
 <!-- Features Section End -->
 
 
-{{--@foreach($platforms as $platform)--}}
-
-{{--    <!-- About Section Start -->--}}
-{{--    <section--}}
-{{--        class="about-section anim-object pdt-110 pdb-115 pdb-lg-110"--}}
-{{--        data-background="images/bg/abs-bg3.png"--}}
-{{--    >--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-md-12 col-lg-8 col-xl-6">--}}
-{{--                    <div class="about-image-box-style2 dot-circle mrr-60 mrr-lg-0">--}}
-{{--                        <img--}}
-{{--                            class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block"--}}
-{{--                            src=""--}}
-{{--                            alt=""--}}
-{{--                        />--}}
-{{--                        <img--}}
-{{--                            class="about-image2 img-full"--}}
-{{--                            src="{{ asset('storage/'. $platform->image) }}"--}}
-{{--                            alt=""--}}
-{{--                        />--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-md-12 col-lg-10 col-xl-6">--}}
-{{--                    <h5 class="side-line-left text-primary-color mrb-10">--}}
-{{--                        {{ $platform->title_en }}--}}
-{{--                    </h5>--}}
-{{--                    <h2 class="mrb-35"></h2>--}}
-{{--                    <p class="mrb-35" style="text-align: justify">--}}
-{{--                       {{ $platform->content_en }}--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
-{{--    <!-- About Section End -->--}}
 
 {{--@endforeach--}}
 
