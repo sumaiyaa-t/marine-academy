@@ -78,15 +78,16 @@
 @import url("../css/kursor.css");
 
 :root {
-    --primary-color: #0162ca;
+    /* --primary-color: #0162ca; */
+    --primary-color: #155725;
     --primary-color-rgb: 1, 98, 202;
-    --primary-color2: #07a4e6;
+    --primary-color2: #155725;
     --primary-color2-rgb: 7, 164, 230;
     --primary-color3: #33d687;
     --primary-color3-rgb: 51, 214, 135;
     --primary-color4: #fab758;
     --primary-color4-rgb: 250, 183, 88;
-    --secondary-color: #003478;
+    --secondary-color: #042f0f;
     --secondary-color-rgb: 10, 32, 70;
     --secondary-color2: #353666;
     --secondary-color2-rgb: 10, 32, 70;
@@ -120,7 +121,7 @@
     --primary-font1: "Red Hat Display", sans-serif;
     --secondary-font1: "Open Sans", sans-serif;
     --heading-font-family: var(--primary-font1);
-    --heading-text-color: #00224f;
+    --heading-text-color: #033b0d;
     --body-font-family: var(--secondary-font1);
     --body-font-color: #404653;
     --body-font-size: 1rem;
