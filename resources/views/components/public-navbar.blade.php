@@ -1,5 +1,5 @@
 <!-- Preloader Start -->
-<section>
+{{-- <section>
     <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
             <div class="animation-preloader">
@@ -26,7 +26,7 @@
             <div class="loader-section section-right"></div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- Preloader End -->
 <!-- header Start -->
 

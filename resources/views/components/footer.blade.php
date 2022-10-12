@@ -1,9 +1,17 @@
 <!-- Footer Area Start -->
 <footer class="footer anim-object2">
+
+
+    {{--  ------------------------------------------ Footer map image -------------------------------  --}}
+
     <div
         class="footer-main-area bg-cover pdb-lg-60"
-        data-background="images/footer-bg.png"
+        data-background=""
     >
+
+        {{--  ------------------------------------------ Footer map image -------------------------------  --}}
+
+
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
@@ -50,7 +58,8 @@
                                         <div class="contact-info-text">
                                             <h5 class="text-white">Phone</h5>
                                             <p class="mrb-0">
-                                                <a class="text-light-gray" href="{{ \App\Contact::first()->phone ?? 'No Info' }}"
+                                                <a class="text-light-gray"
+                                                   href="{{ \App\Contact::first()->phone ?? 'No Info' }}"
                                                 >{{ \App\Contact::first()->phone ?? 'No Info' }}</a
                                                 >
                                             </p>

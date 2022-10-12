@@ -2662,19 +2662,21 @@ div[class*="kursor"].kursor--1.kursor--down {
 
 .bar1 {
     width: 55%;
-    background: var(--primary-color);
+    background: #155725;
     height: 2px;
 }
 
 .bar2 {
     width: 75%;
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
+    background: #155725;
     height: 2px;
 }
 
 .bar3 {
     width: 65%;
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
+    background: #155725;
     height: 2px;
 }
 
@@ -2682,12 +2684,12 @@ div[class*="kursor"].kursor--1.kursor--down {
 /*-------------- [_Footer] ---------------*/
 /*========================================*/
 .footer-main-area {
-    background: #0a1d30;
+    background: #155725;
     padding: 110px 0 110px;
 }
 
 .footer-bottom-area {
-    background: #1a223b;
+    background: #073814;
 }
 
 .footer-border-top {
@@ -4118,7 +4120,8 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .cs-btn-one.btn-primary-color {
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
+    background: #155725;
 }
 
 .cs-btn-one.btn-primary-color.hover-white:hover {
@@ -4880,7 +4883,7 @@ select {
     left: 0;
     right: 0;
     content: "";
-    background-color: var(--primary-color);
+    background-color: #155725;
     border-radius: 10px;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -9219,7 +9222,8 @@ select {
 }
 
 [data-overlay-dark]:before {
-    background: var(--secondary-color);
+    /*background: var(--secondary-color);*/
+    background: #155725;
 }
 
 [data-overlay-light]:before {
@@ -9227,7 +9231,8 @@ select {
 }
 
 [data-overlay-primary-color]:before {
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
+    background: #155725;
 }
 
 [data-overlay-dark="0"]:before,
