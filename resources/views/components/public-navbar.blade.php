@@ -90,7 +90,7 @@
                             </div>
                             <div class="side-panel-logo mrb-30">
                                 <a href="index.html">
-                                    <img src="{{ asset('images/inf-logo.png') }}" alt="" />
+                                    {{-- <img src="{{ asset('images/inf-logo.png') }}" alt="" /> --}}
                                 </a>
                             </div>
                             <div class="side-info mrb-30">
