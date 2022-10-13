@@ -71,8 +71,9 @@
             <div class="insuren-custom-container">
                 <div class="row">
                     <div class="col-md-12">
+{{--                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">--}}
                         <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">
-                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.png') }}" alt="">
+                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt="" style="width: 200px; height: 100px; margin-top: -30px">
                         </a>
                         <div class="mobile-menu-right"></div>
                         <div class="header-searchbox-style-two d-none d-xl-block">
@@ -90,7 +91,7 @@
                             </div>
                             <div class="side-panel-logo mrb-30">
                                 <a href="index.html">
-                                    {{-- <img src="{{ asset('images/inf-logo.png') }}" alt="" /> --}}
+                                     <img src="{{ asset('images/logo.jpeg') }}" alt="" />
                                 </a>
                             </div>
                             <div class="side-info mrb-30">

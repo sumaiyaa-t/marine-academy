@@ -18,7 +18,7 @@
                     <div class="row footer-border-bottom mrb-40 mrr-60 mrr-md-0">
                         <div class="col-xl-4 col-lg-4 col-md-12">
                             <div class="">
-                                <img src="{{ asset('images/logo-footer.png') }}" alt="" class="mrb-25">
+                                <img src="{{ asset('images/logo.jpeg') }}" alt="" class="mrb-25">
                                 <p class="text-white mrb-25"></p>
                                 <!-- <ul class="social-list">
                                 <li>

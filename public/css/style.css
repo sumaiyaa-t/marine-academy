@@ -79,15 +79,15 @@
 
 :root {
     /* --primary-color: #0162ca; */
-    --primary-color: #155725;
+    --primary-color: #32ad79;
     --primary-color-rgb: 1, 98, 202;
-    --primary-color2: #155725;
+    --primary-color2: #32ad79;
     --primary-color2-rgb: 7, 164, 230;
     --primary-color3: #33d687;
     --primary-color3-rgb: 51, 214, 135;
     --primary-color4: #fab758;
     --primary-color4-rgb: 250, 183, 88;
-    --secondary-color: #042f0f;
+    --secondary-color: #32ad79;
     --secondary-color-rgb: 10, 32, 70;
     --secondary-color2: #353666;
     --secondary-color2-rgb: 10, 32, 70;
@@ -2685,18 +2685,18 @@ div[class*="kursor"].kursor--1.kursor--down {
 /*-------------- [_Footer] ---------------*/
 /*========================================*/
 .footer-main-area {
-    background: #155725;
+    background: var(--primary-color);
     padding: 110px 0 110px;
 }
 
 .footer-bottom-area {
-    background: #073814;
+    background: #2b7540;
 }
 
 .footer-border-top {
     border-top: 1px solid #18143d;
 }
-
+.footer-bottom-area
 .footer-border-bottom {
     border-bottom: 1px solid #303b58;
 }
@@ -2712,7 +2712,7 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .footer-widget-list li a {
-    color: var(--text-light-gray);
+    color: var(--text-black);
     position: relative;
     padding-left: 25px;
 }
@@ -2967,7 +2967,8 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .text-primary-color2 {
-    color: var(--primary-color2);
+    /*color: var(--primary-color2);*/
+    color: #0a3041;
 }
 
 .text-primary-color3 {
@@ -2995,7 +2996,8 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .bg-gradient-reverse-color {
-    background: #1f6231;
+    /*background: #1f6231;*/
+    background: var(--secondary-color);
 }
 
 /*========================================*/
@@ -4121,8 +4123,8 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .cs-btn-one.btn-primary-color {
-    /*background: var(--primary-color);*/
-    background: #155725;
+    background: var(--primary-color);
+    /*background: #155725;*/
 }
 
 .cs-btn-one.btn-primary-color.hover-white:hover {
@@ -9223,8 +9225,8 @@ select {
 }
 
 [data-overlay-dark]:before {
-    /*background: var(--secondary-color);*/
-    background: #155725;
+    background: var(--secondary-color);
+    /*background: #155725;*/
 }
 
 [data-overlay-light]:before {
@@ -9232,8 +9234,8 @@ select {
 }
 
 [data-overlay-primary-color]:before {
-    /*background: var(--primary-color);*/
-    background: #155725;
+    background: var(--primary-color);
+    /*background: #155725;*/
 }
 
 [data-overlay-dark="0"]:before,
@@ -9404,7 +9406,7 @@ select {
 }
 
 .text-light-gray {
-    color: var(--text-light-gray);
+    color: var(--text-black);
 }
 
 .text-gray {
