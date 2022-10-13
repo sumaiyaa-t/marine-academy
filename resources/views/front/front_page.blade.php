@@ -10,7 +10,7 @@
         name="keywords"
         content="website, agency, business, consulting, corporate, finance, digital, marketing, multipurpose"
     />
-    <title>Samak Technologies BD Ltd.</title>
+    <title>Samak Technologies</title>
     <link
         href=""
         rel="shortcut icon"
@@ -25,7 +25,9 @@
 
 
 {{--------------------------------------------------------- public Navbar Extension --------------------------------------------------- --}}
+<section id="home">
 
+</section>
 <x-public-navbar></x-public-navbar>
 
 {{--------------------------------------------------------- public Navbar Extension --------------------------------------------------- --}}
@@ -138,53 +140,127 @@
 <!-- Features Section End -->
 
 
-
 {{--@endforeach--}}
+
+
+<section id="platform">
+    <br><br><br><br>
+</section>
+
 
 @foreach($platforms as $platform)
 
-<section
-    class="pdt-110 pdb-90 pdb-md-110"
-    data-background=""
-    data-overlay-primary-color="94"
->
-    <div class="section-content">
-        <div class="container">
-            <div class="row">
-                <div
-                    class="col-md-6 col-lg-6 col-xl-7 wow fadeInUp"
-                    data-wow-delay="0ms"
-                    data-wow-duration="800ms"
-                >
-                    <h5 class="side-line-left white text-white mrb-10">
-                        What We Offer
-                    </h5>
-                    <h2 class="text-white mrb-25"> {{ $platform->title_en }}</h2>
-                    <div class="row">
-                        <div class="col-xl-9">
-                            <p class="text-white mrb-35" style="text-align: justify">
-                                {{ $platform->content_en }}
-                            </p>
+    <section
+        class="pdt-110 pdb-90 pdb-md-110"
+        data-background=""
+        data-overlay-primary-color="94"
+        id=""
+    >
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-7 wow fadeInUp"
+                        data-wow-delay="0ms"
+                        data-wow-duration="800ms"
+                    >
+                        <h5 class="side-line-left white text-white mrb-10">
+                            What We Offer
+                        </h5>
+                        <h2 class="text-white mrb-25"> {{ $platform->title_en }}</h2>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <p class="text-white mrb-35" style="text-align: justify">
+                                    {{ $platform->content_en }}
+                                </p>
+                            </div>
+                            <div class="col"></div>
                         </div>
-                        <div class="col"></div>
                     </div>
-                </div>
-                <div
-                    class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp"
-                    data-wow-delay="200ms"
-                    data-wow-duration="800ms"
-                >
-                    <div class="company-img">
-                        <img src="{{ asset('storage/'. $platform->image) }}" alt=""/>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp"
+                        data-wow-delay="200ms"
+                        data-wow-duration="800ms"
+                    >
+                        <div class="company-img">
+                            <img src="{{ asset('storage/'. $platform->image) }}" alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 @endforeach
 
+
+{{-- ----------------------------------------------- Services ------------------------------------------ --}}
+
+<section id="service">
+    <br><br><br><br><br>
+
+</section>
+
+
+<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-8 col-xl-6">
+                <div class="title-box-center">
+                    <h6 class="sub-title line-top-center mrb-10">Our Services</h6>
+                    <h2 class="title">Platform Features</h2>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ecosystem">
+    <img src="{{ asset('images/platform.png') }}" alt="" class="img-fluid">
+</div>
+
+
+{{-- ----------------------------------------------- Services ------------------------------------------ --}}
+
+
+{{-- ----------------------------------------------- Ecosystem ------------------------------------------ --}}
+
+<section id="ecosystem">
+    <br><br><br><br><br>
+
+</section>
+
+
+<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-8 col-xl-6">
+                <div class="title-box-center">
+                    <h6 class="sub-title line-top-center mrb-10">What We Provide</h6>
+                    <h2 class="title">Our Ecosystem</h2>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ecosystem">
+    <img src="{{ asset('images/ecosystem.png') }}" alt="" class="img-fluid">
+</div>
+
+
+{{-- ----------------------------------------------- Ecosystem ------------------------------------------ --}}
+
+
+<section id="team">
+    <br><br><br>
+</section>
 
 <!-- Team Section Start -->
 <section class="pdt-110 pdb-170 bg-no-repeat bg-cover bg-pos-ct anim-object" data-background="images/bg/abs-bg7.png">
@@ -238,119 +314,119 @@
 
 
 <!-- Funfact Section Start -->
-<section class="pdt-110 pdb-50 pdb-md-45" data-background="images/bg/banner2.jpg" data-overlay-dark="95">
-    <div class="section-content">
-        <div class="container">
-            <div class="row">
+{{--<section class="pdt-110 pdb-50 pdb-md-45" data-background="images/bg/banner2.jpg" data-overlay-dark="95">--}}
+{{--    <div class="section-content">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
 
-                @foreach($counters as $counter)
-                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-                        <div class="funfact mrb-60">
-                            <div class="funfact-icon">
-                                <span class="webexflaticon flaticon-briefcase-1"></span>
-                            </div>
-                            <div class="funfact-details">
-                                <h2 class="counter">{!! $counter->content_en !!}</h2>
-                                <h5 class="title">{{ $counter->title_en }}</h5>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-</section>
+{{--                @foreach($counters as $counter)--}}
+{{--                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">--}}
+{{--                        <div class="funfact mrb-60">--}}
+{{--                            <div class="funfact-icon">--}}
+{{--                                <span class="webexflaticon flaticon-briefcase-1"></span>--}}
+{{--                            </div>--}}
+{{--                            <div class="funfact-details">--}}
+{{--                                <h2 class="counter">{!! $counter->content_en !!}</h2>--}}
+{{--                                <h5 class="title">{{ $counter->title_en }}</h5>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endforeach--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 
-<section
-    class="about-section anim-object pdt-110 pdb-110 pdb-lg-110"
-    data-background="images/bg/abs-bg3.png"
->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-10 col-xl-6">
-                <h5 class="side-line-left text-primary-color mrb-10">
-                    Achievements & Partners
-                </h5>
-                <h3 class="mrb-35">Our Prominent Partners</h3>
-                <div class="row no-gutters mrb-15">
+{{--<section--}}
+{{--    class="about-section anim-object pdt-110 pdb-110 pdb-lg-110"--}}
+{{--    data-background="images/bg/abs-bg3.png"--}}
+{{-->--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-12 col-lg-10 col-xl-6">--}}
+{{--                <h5 class="side-line-left text-primary-color mrb-10">--}}
+{{--                    Achievements & Partners--}}
+{{--                </h5>--}}
+{{--                <h3 class="mrb-35">Our Prominent Partners</h3>--}}
+{{--                <div class="row no-gutters mrb-15">--}}
 
-                    @foreach($partners as $partner)
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <div class="featured-icon-box mrb-10">
-                                <div class="featured-icon">
-                                    <i class="webexflaticon flaticon-employee-2"></i>
-                                </div>
-                                <div class="featured-content">
-                                    <h4 class="featured-title">{{ $partner->title_en }}</h4>
-                                    <p class="featured-desc" style="text-align: justify">
-                                        {{ $partner->content_en }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
+{{--                    @foreach($partners as $partner)--}}
+{{--                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">--}}
+{{--                            <div class="featured-icon-box mrb-10">--}}
+{{--                                <div class="featured-icon">--}}
+{{--                                    <i class="webexflaticon flaticon-employee-2"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="featured-content">--}}
+{{--                                    <h4 class="featured-title">{{ $partner->title_en }}</h4>--}}
+{{--                                    <p class="featured-desc" style="text-align: justify">--}}
+{{--                                        {{ $partner->content_en }}--}}
+{{--                                    </p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    @endforeach--}}
 
-                    <h3 class="mrb-35">Achievements</h3>
+{{--                    <h3 class="mrb-35">Achievements</h3>--}}
 
-                    @foreach($achievements as $achievement)
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <div class="featured-icon-box mrb-10">
-                                <div class="featured-icon">
-                                    <i class="webexflaticon flaticon-employee-2"></i>
-                                </div>
-                                <div class="featured-content">
-                                    <h4 class="featured-title">{{ $achievement->title_en }}</h4>
-                                    <p class="featured-desc" style="text-align: justify">
-                                        {{ $achievement->content_en }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
+{{--                    @foreach($achievements as $achievement)--}}
+{{--                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">--}}
+{{--                            <div class="featured-icon-box mrb-10">--}}
+{{--                                <div class="featured-icon">--}}
+{{--                                    <i class="webexflaticon flaticon-employee-2"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="featured-content">--}}
+{{--                                    <h4 class="featured-title">{{ $achievement->title_en }}</h4>--}}
+{{--                                    <p class="featured-desc" style="text-align: justify">--}}
+{{--                                        {{ $achievement->content_en }}--}}
+{{--                                    </p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    @endforeach--}}
 
-                    {{--                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">--}}
-                    {{--                        <div class="featured-icon-box">--}}
-                    {{--                            <div class="featured-icon">--}}
-                    {{--                                <i class="webexflaticon flaticon-award"></i>--}}
-                    {{--                            </div>--}}
-                    {{--                            <div class="featured-content">--}}
-                    {{--                                <h4 class="featured-title">--}}
-                    {{--                                    Blockchain Challenge Finalist--}}
-                    {{--                                </h4>--}}
-                    {{--                                <p class="featured-desc" style="text-align: justify">--}}
-                    {{--                                    Proud to be selected to participate in the FT x Cardano--}}
-                    {{--                                    Blockchain Challenge Finals.--}}
-                    {{--                                </p>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
+{{--                    --}}{{--                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">--}}
+{{--                    --}}{{--                        <div class="featured-icon-box">--}}
+{{--                    --}}{{--                            <div class="featured-icon">--}}
+{{--                    --}}{{--                                <i class="webexflaticon flaticon-award"></i>--}}
+{{--                    --}}{{--                            </div>--}}
+{{--                    --}}{{--                            <div class="featured-content">--}}
+{{--                    --}}{{--                                <h4 class="featured-title">--}}
+{{--                    --}}{{--                                    Blockchain Challenge Finalist--}}
+{{--                    --}}{{--                                </h4>--}}
+{{--                    --}}{{--                                <p class="featured-desc" style="text-align: justify">--}}
+{{--                    --}}{{--                                    Proud to be selected to participate in the FT x Cardano--}}
+{{--                    --}}{{--                                    Blockchain Challenge Finals.--}}
+{{--                    --}}{{--                                </p>--}}
+{{--                    --}}{{--                            </div>--}}
+{{--                    --}}{{--                        </div>--}}
+{{--                    --}}{{--                    </div>--}}
 
-                </div>
-                <div class="d-inline d-md-flex align-items-center mt-40 mrb-lg-60">
-                    <!-- <div class="signature mrr-30 mrb-sm-30">
-                                  <img src="images/about/signature.png" alt="">
-                              </div>
-                              <a href="page-about.html" class="cs-btn-one btn-primary-color btn-md btn-block mrb-sm-60">Read More</a> -->
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-8 col-xl-6">
-                <div class="about-image-box-style3 dot-circle mrb-lg-110 mrb-sm-0">
-                    <img
-                        class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block"
-                        src="{{ asset('images/AWS Header Graphic.webp') }}"
-                        alt=""
-                    />
-                    <img
-                        class="about-image2 img-full"
-                        src="{{asset('images/blockchain.jpg')}}"
-                        alt=""
-                    />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--                </div>--}}
+{{--                <div class="d-inline d-md-flex align-items-center mt-40 mrb-lg-60">--}}
+{{--                    <!-- <div class="signature mrr-30 mrb-sm-30">--}}
+{{--                                  <img src="images/about/signature.png" alt="">--}}
+{{--                              </div>--}}
+{{--                              <a href="page-about.html" class="cs-btn-one btn-primary-color btn-md btn-block mrb-sm-60">Read More</a> -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-12 col-lg-8 col-xl-6">--}}
+{{--                <div class="about-image-box-style3 dot-circle mrb-lg-110 mrb-sm-0">--}}
+{{--                    <img--}}
+{{--                        class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block"--}}
+{{--                        src="{{ asset('images/AWS Header Graphic.webp') }}"--}}
+{{--                        alt=""--}}
+{{--                    />--}}
+{{--                    <img--}}
+{{--                        class="about-image2 img-full"--}}
+{{--                        src="{{asset('images/blockchain.jpg')}}"--}}
+{{--                        alt=""--}}
+{{--                    />--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 
 {{--------------------------------------------------- Footer Component ------------------------------------------------ --}}

@@ -4886,7 +4886,7 @@ select {
     left: 0;
     right: 0;
     content: "";
-    background-color: #155725;
+    background-color: var(--primary-color);
     border-radius: 10px;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;

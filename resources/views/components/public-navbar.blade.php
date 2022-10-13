@@ -71,9 +71,10 @@
             <div class="insuren-custom-container">
                 <div class="row">
                     <div class="col-md-12">
-{{--                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">--}}
+                        {{--                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">--}}
                         <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">
-                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt="" style="width: 200px; height: 100px; margin-top: -30px">
+                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt=""
+                                 style="width: 200px; height: 100px; margin-top: -30px">
                         </a>
                         <div class="mobile-menu-right"></div>
                         <div class="header-searchbox-style-two d-none d-xl-block">
@@ -91,7 +92,7 @@
                             </div>
                             <div class="side-panel-logo mrb-30">
                                 <a href="index.html">
-                                     <img src="{{ asset('images/logo.jpeg') }}" alt="" />
+                                    <img src="{{ asset('images/logo.jpeg') }}" alt=""/>
                                 </a>
                             </div>
                             <div class="side-info mrb-30">
@@ -121,35 +122,31 @@
                                     </ul>
                                 </div>
                             </div>
-
-{{--                            <h4 class="mrb-15">Social List</h4>--}}
-{{--                            <ul class="social-list">--}}
-{{--                                <li>--}}
-{{--                                    <a--}}
-{{--                                        href="https://www.linkedin.com/company/inflexionpoint-technologies-bd-ltd/"--}}
-{{--                                        target="_blank"--}}
-{{--                                    ><i class="fab fa-linkedin"></i--}}
-{{--                                        ></a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu-right">
                                 <ul>
                                     <li class="">
-                                        <a href="./index.html">Home</a>
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#home" }}">Home</a>
                                     </li>
                                     <li class="">
-                                        <a href="./page-about.html">Platforms</a>
-                                    </li>
-{{--                                    <li class="">--}}
-{{--                                        <a href="./page-solutions.html">About</a>--}}
-{{--                                    </li>--}}
-                                    <li class="">
-                                        <a href="./page-solutions.html">Ecosystem</a>
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#platform" }}">Platforms</a>
                                     </li>
 
-                                    <li><a href="./contact-us.html">Contact Us</a></li>
+                                    <li class="">
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#service" }}">Services</a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#ecosystem" }}">Ecosystem</a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#team" }}">Team</a>
+                                    </li>
+
+                                    <li><a href="{{ Illuminate\Support\Facades\URL::current() . "#contact" }}">Contact
+                                            Us</a></li>
                                 </ul>
                             </nav>
                         </div>

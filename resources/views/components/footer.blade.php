@@ -18,7 +18,7 @@
                     <div class="row footer-border-bottom mrb-40 mrr-60 mrr-md-0">
                         <div class="col-xl-4 col-lg-4 col-md-12">
                             <div class="">
-                                <img src="{{ asset('images/logo.jpeg') }}" alt="" class="mrb-25">
+                                <img src="{{ asset('images/footer_samak.png') }}" alt="" class="mrb-25" style="width: 278px; height: 278px">
                                 <p class="text-white mrb-25"></p>
                                 <!-- <ul class="social-list">
                                 <li>
@@ -109,5 +109,9 @@
             </div>
         </div>
     </div>
+
+    <section id="contact">
+
+    </section>
 </footer>
 <!-- Footer Area End -->
