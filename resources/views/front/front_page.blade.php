@@ -12,7 +12,7 @@
     />
     <title>Samak Technologies</title>
     <link
-        href=""
+        href="{{asset('images/rsz.png')}}"
         rel="shortcut icon"
         type="image/png"
     />
