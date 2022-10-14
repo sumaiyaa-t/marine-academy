@@ -298,7 +298,7 @@
                                 <h6 class="designation">{{ $team->position_en }}</h6>
                                 <ul class="social-list list-sm">
                                     {{--                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
-                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="{{ $team->ln ?? '#' }}"><i class="fab fa-linkedin"></i></a></li>
                                     {{--                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>--}}
                                 </ul>
                             </div>
