@@ -53,7 +53,7 @@
                         <ul class="social-links">
                             <li>
                                 <a
-                                    href="https://www.linkedin.com/company/inflexionpoint-technologies-bd-ltd/"
+                                    href="#"
                                 ><i class="fab fa-linkedin-in"></i
                                     ></a>
                             </li>
