@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="author" content="Insuren"/>
+    <meta name="author" content="Marine Academy"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="Samak Technologies"/>
+    <meta name="description" content="Marine Academy"/>
     <meta
         name="keywords"
         content="website, agency, business, consulting, corporate, finance, digital, marketing, multipurpose"
     />
-    <title>Samak Technologies</title>
-    <link
-        href="{{asset('images/rsz.png')}}"
-        rel="shortcut icon"
-        type="image/png"
-    />
+    <title>Marine Academy</title>
+{{--    <link--}}
+{{--        href="{{asset('images/rsz.png')}}"--}}
+{{--        rel="shortcut icon"--}}
+{{--        type="image/png"--}}
+{{--    />--}}
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}"/>
@@ -209,7 +209,7 @@
             <div class="col-lg-8 col-xl-6">
                 <div class="title-box-center">
                     <h6 class="sub-title line-top-center mrb-10">Our Services</h6>
-                    <h2 class="title">Platform Features</h2>
+                    <h2 class="title">Features</h2>
                 </div>
             </div>
             <div class="col"></div>
@@ -218,9 +218,9 @@
 </div>
 
 
-<div class="ecosystem">
-    <img src="{{ asset('images/platform.png') }}" alt="" class="img-fluid">
-</div>
+{{--<div class="ecosystem">--}}
+{{--    <img src="{{ asset('images/platform.png') }}" alt="" class="img-fluid">--}}
+{{--</div>--}}
 
 
 {{-- ----------------------------------------------- Services ------------------------------------------ --}}
@@ -241,7 +241,7 @@
             <div class="col-lg-8 col-xl-6">
                 <div class="title-box-center">
                     <h6 class="sub-title line-top-center mrb-10">What We Provide</h6>
-                    <h2 class="title">Our Ecosystem</h2>
+                    <h2 class="title">Courses</h2>
                 </div>
             </div>
             <div class="col"></div>
@@ -250,9 +250,9 @@
 </div>
 
 
-<div class="ecosystem">
-    <img src="{{ asset('images/ecosystem.png') }}" alt="" class="img-fluid">
-</div>
+{{--<div class="ecosystem">--}}
+{{--    <img src="{{ asset('images/ecosystem.png') }}" alt="" class="img-fluid">--}}
+{{--</div>--}}
 
 
 {{-- ----------------------------------------------- Ecosystem ------------------------------------------ --}}
@@ -314,28 +314,28 @@
 
 
 <!-- Funfact Section Start -->
-{{--<section class="pdt-110 pdb-50 pdb-md-45" data-background="images/bg/banner2.jpg" data-overlay-dark="95">--}}
-{{--    <div class="section-content">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
+<section class="pdt-110 pdb-50 pdb-md-45" data-background="images/bg/banner2.jpg" data-overlay-dark="95">
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
 
-{{--                @foreach($counters as $counter)--}}
-{{--                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">--}}
-{{--                        <div class="funfact mrb-60">--}}
-{{--                            <div class="funfact-icon">--}}
-{{--                                <span class="webexflaticon flaticon-briefcase-1"></span>--}}
-{{--                            </div>--}}
-{{--                            <div class="funfact-details">--}}
-{{--                                <h2 class="counter">{!! $counter->content_en !!}</h2>--}}
-{{--                                <h5 class="title">{{ $counter->title_en }}</h5>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+                @foreach($counters as $counter)
+                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+                        <div class="funfact mrb-60">
+                            <div class="funfact-icon">
+                                <span class="webexflaticon flaticon-briefcase-1"></span>
+                            </div>
+                            <div class="funfact-details">
+                                <h2 class="counter">{!! $counter->content_en !!}</h2>
+                                <h5 class="title">{{ $counter->title_en }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {{--<section--}}

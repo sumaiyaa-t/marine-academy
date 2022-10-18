@@ -18,7 +18,7 @@
                     <div class="row footer-border-bottom mrb-40 mrr-60 mrr-md-0">
                         <div class="col-xl-4 col-lg-4 col-md-12">
                             <div class="">
-                                <img src="{{ asset('images/footer_samak.png') }}" alt="" class="mrb-25" style="width: 278px; height: 278px">
+{{--                                <img src="{{ asset('images/footer_samak.png') }}" alt="" class="mrb-25" style="width: 278px; height: 278px">--}}
                                 <p class="text-white mrb-25"></p>
                                 <!-- <ul class="social-list">
                                 <li>
@@ -73,8 +73,8 @@
                                 <h5 class="widget-title text-white mrb-30">Useful Links</h5>
                                 <ul class="footer-widget-list">
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">Platforms</a></li>
-                                    <li><a href="#">Ecosystems</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Courses</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                       target="_blank"
                       href="#"
                   >
-                    Samak Technologies</a
+                    Marine Academy</a
                   >
                   ©
                   <script>

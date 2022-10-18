@@ -78,16 +78,15 @@
 @import url("../css/kursor.css");
 
 :root {
-    /* --primary-color: #0162ca; */
-    --primary-color: #32ad79;
+    --primary-color: #0162ca;
     --primary-color-rgb: 1, 98, 202;
-    --primary-color2: #32ad79;
+    --primary-color2: #07a4e6;
     --primary-color2-rgb: 7, 164, 230;
     --primary-color3: #33d687;
     --primary-color3-rgb: 51, 214, 135;
     --primary-color4: #fab758;
     --primary-color4-rgb: 250, 183, 88;
-    --secondary-color: #32ad79;
+    --secondary-color: #003478;
     --secondary-color-rgb: 10, 32, 70;
     --secondary-color2: #353666;
     --secondary-color2-rgb: 10, 32, 70;
@@ -121,7 +120,7 @@
     --primary-font1: "Red Hat Display", sans-serif;
     --secondary-font1: "Open Sans", sans-serif;
     --heading-font-family: var(--primary-font1);
-    --heading-text-color: #033b0d;
+    --heading-text-color: #00224f;
     --body-font-family: var(--secondary-font1);
     --body-font-color: #404653;
     --body-font-size: 1rem;
@@ -2663,21 +2662,21 @@ div[class*="kursor"].kursor--1.kursor--down {
 
 .bar1 {
     width: 55%;
-    background: #155725;
+    background: #18143d;
     height: 2px;
 }
 
 .bar2 {
     width: 75%;
     /*background: var(--primary-color);*/
-    background: #155725;
+    background: #18143d;
     height: 2px;
 }
 
 .bar3 {
     width: 65%;
     /*background: var(--primary-color);*/
-    background: #155725;
+    background: #18143d;
     height: 2px;
 }
 
@@ -2690,7 +2689,7 @@ div[class*="kursor"].kursor--1.kursor--down {
 }
 
 .footer-bottom-area {
-    background: #2b7540;
+    background: #18143d;
 }
 
 .footer-border-top {

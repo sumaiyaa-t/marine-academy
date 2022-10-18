@@ -73,8 +73,8 @@
                     <div class="col-md-12">
                         {{--                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">--}}
                         <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">
-                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt=""
-                                 style="width: 200px; height: 100px; margin-top: -30px">
+{{--                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt=""--}}
+{{--                                 style="width: 200px; height: 100px; margin-top: -30px">--}}
                         </a>
                         <div class="mobile-menu-right"></div>
                         <div class="header-searchbox-style-two d-none d-xl-block">
@@ -92,7 +92,7 @@
                             </div>
                             <div class="side-panel-logo mrb-30">
                                 <a href="index.html">
-                                    <img src="{{ asset('images/logo.jpeg') }}" alt=""/>
+{{--                                    <img src="{{ asset('images/logo.jpeg') }}" alt=""/>--}}
                                 </a>
                             </div>
                             <div class="side-info mrb-30">
@@ -130,7 +130,7 @@
                                         <a href="{{ Illuminate\Support\Facades\URL::current() . "#home" }}">Home</a>
                                     </li>
                                     <li class="">
-                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#platform" }}">Platforms</a>
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#platform" }}">Features</a>
                                     </li>
 
                                     <li class="">
@@ -138,7 +138,7 @@
                                     </li>
 
                                     <li class="">
-                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#ecosystem" }}">Ecosystem</a>
+                                        <a href="{{ Illuminate\Support\Facades\URL::current() . "#ecosystem" }}">Courses</a>
                                     </li>
 
                                     <li class="">
