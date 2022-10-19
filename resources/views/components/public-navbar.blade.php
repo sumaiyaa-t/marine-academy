@@ -59,9 +59,11 @@
                             </li>
                         </ul>
                         <div class="language">
-                            <a class="language-btn" href="#"
-                            ><i class="webexflaticon flaticon-internet"></i> English</a
-                            >
+                            <a class="language-btn" href="#"><i class="webexflaticon flaticon-internet"></i> English</a>
+                            <ul class="language-dropdown">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Bangla</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -73,8 +75,8 @@
                     <div class="col-md-12">
                         {{--                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">--}}
                         <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="#">
-{{--                            <img id="logo-image" class="img-center" src="{{ asset('images/logo.jpeg') }}" alt=""--}}
-{{--                                 style="width: 200px; height: 100px; margin-top: -30px">--}}
+                            <img id="logo-image" class="img-center" src="{{ asset('images/inf-logo.png') }}" alt=""
+                                 style="width: 200px; height: 100px; margin-top: -30px">
                         </a>
                         <div class="mobile-menu-right"></div>
                         <div class="header-searchbox-style-two d-none d-xl-block">

@@ -97,7 +97,7 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#platform"
        aria-expanded="true" aria-controls="counter">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Platform</span>
+        <span>Services</span>
     </a>
     <div id="platform" class="collapse" aria-labelledby="headingTwo" data-parent="#platform">
         <div class="bg-white py-2 collapse-inner rounded">
@@ -117,7 +117,7 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Objective"
        aria-expanded="true" aria-controls="counter">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Objective</span>
+        <span>Objective (About Us)</span>
     </a>
     <div id="Objective" class="collapse" aria-labelledby="headingTwo" data-parent="#platform">
         <div class="bg-white py-2 collapse-inner rounded">
@@ -137,7 +137,7 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Ecosystem"
        aria-expanded="true" aria-controls="counter">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Ecosystem</span>
+        <span>Courses</span>
     </a>
     <div id="Ecosystem" class="collapse" aria-labelledby="headingTwo" data-parent="#platform">
         <div class="bg-white py-2 collapse-inner rounded">

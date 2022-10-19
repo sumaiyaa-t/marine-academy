@@ -95,12 +95,12 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col-lg-8 col-xl-6">
-                    <!-- <div class="title-box-center">
-                    <h5 class="sub-title sub-title-primary-color text-primary-color mrb-15">
-                      Our Goals
-                    </h5>
+                     <div class="title-box-center">
+{{--                    <h5 class="sub-title sub-title-primary-color text-primary-color mrb-15">--}}
+{{--                        Welcome To Marine Academy--}}
+{{--                    </h5>--}}
                     <h2></h2>
-                  </div> -->
+                  </div>
                 </div>
                 <div class="col"></div>
             </div>
@@ -142,80 +142,170 @@
 
 {{--@endforeach--}}
 
+<section
+    class="about-section anim-object pdt-110 pdb-115 pdb-lg-110"
+    data-background="images/bg/abs-bg3.png"
+>
+    <div class="container">
+        @foreach($objectives as $objective)
+        <div class="row">
 
+            <div class="col-md-12 col-lg-8 col-xl-6">
+                <div class="about-image-box-style2 dot-circle mrr-60 mrr-lg-0">
+                    <img
+                        class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block"
+                        src=""
+                        alt=""
+                    />
+                    <img
+                        class="about-image2 img-full"
+                        src="{{ asset('storage/'. $objective->image) }}"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-6">
+                <h5 class="side-line-left text-primary-color mrb-10">
+                    About Us
+                </h5>
+                <h2 class="mrb-35">{{ $objective->title_en }}</h2>
+                <p class="mrb-35" style="text-align:justify">
+                    {{ $objective->content_en }}
+                </p>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</section>
+<!-- About Section End -->
 <section id="platform">
-    <br><br><br><br>
+
 </section>
 
-
-@foreach($platforms as $platform)
-
-    <section
-        class="pdt-110 pdb-90 pdb-md-110"
-        data-background=""
-        data-overlay-primary-color="94"
-        id=""
+<section
+    class="service-content-area bg-silver pdt-110 pdb-110"
+    data-background="images/bg/abs-bg8.png"
+>
+    <div
+        class="section-title text-center wow fadeInUp"
+        data-wow-delay="0ms"
+        data-wow-duration="1500ms"
     >
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="col-md-6 col-lg-6 col-xl-7 wow fadeInUp"
-                        data-wow-delay="0ms"
-                        data-wow-duration="800ms"
-                    >
-                        <h5 class="side-line-left white text-white mrb-10">
-                            What We Offer
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-8 col-xl-6">
+                    <div class="title-box-center">
+                        <h5
+                            class="sub-title sub-title-primary-color text-primary-color mrb-20"
+                        >
+                            Services
                         </h5>
-                        <h2 class="text-white mrb-25"> {{ $platform->title_en }}</h2>
-                        <div class="row">
-                            <div class="col-xl-9">
-                                <p class="text-white mrb-35" style="text-align: justify">
-                                    {{ $platform->content_en }}
-                                </p>
-                            </div>
-                            <div class="col"></div>
-                        </div>
+                        <h2>Our Services</h2>
                     </div>
-                    <div
-                        class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp"
-                        data-wow-delay="200ms"
-                        data-wow-duration="800ms"
-                    >
-                        <div class="company-img">
-                            <img src="{{ asset('storage/'. $platform->image) }}" alt=""/>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                @foreach($platforms as $platform)
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="service-style4">
+                        <div class="service-item-thumb">
+                            <img class="img-full" style="height:200px;" src="{{ asset('storage/'. $platform->image) }}" alt=""/>
+                            <div class="service-item-icon">
+                                <i class=""></i>
+                            </div>
+                        </div>
+                        <div class="service-item-content">
+                            <h4 class="service-item-title">
+                                <p> {{ $platform->title_en }}</p>
+                            </h4>
+                            <p class="service-item-para" style="text-align:justify">
+                                {{ $platform->content_en }}
+                            </p>
                         </div>
                     </div>
                 </div>
+                @endforeach
+            </div>
+            <div class="row mrt-25">
+                <div class="col-xl-12 text-center"></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-@endforeach
+
+{{--    <section--}}
+{{--        class="pdt-110 pdb-90 pdb-md-110"--}}
+{{--        data-background=""--}}
+{{--        data-overlay-primary-color="94"--}}
+{{--        id=""--}}
+{{--    >--}}
+{{--        <div class="section-content">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
+{{--                    <div--}}
+{{--                        class="col-md-6 col-lg-6 col-xl-7 wow fadeInUp"--}}
+{{--                        data-wow-delay="0ms"--}}
+{{--                        data-wow-duration="800ms"--}}
+{{--                    >--}}
+{{--                        <h5 class="side-line-left white text-white mrb-10">--}}
+{{--                            Who We Are--}}
+{{--                        </h5>--}}
+{{--                        <h2 class="text-white mrb-25"> {{ $platform->title_en }}</h2>--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-xl-9">--}}
+{{--                                <p class="text-white mrb-35" style="text-align: justify">--}}
+{{--                                    {{ $platform->content_en }}--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                            <div class="col"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div--}}
+{{--                        class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp"--}}
+{{--                        data-wow-delay="200ms"--}}
+{{--                        data-wow-duration="800ms"--}}
+{{--                    >--}}
+{{--                        <div class="company-img">--}}
+{{--                            <img src="{{ asset('storage/'. $platform->image) }}" alt=""/>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+
+
 
 
 {{-- ----------------------------------------------- Services ------------------------------------------ --}}
 
-<section id="service">
-    <br><br><br><br><br>
+{{--<section id="service">--}}
+{{--    <br><br><br><br><br>--}}
 
-</section>
+{{--</section>--}}
 
 
-<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-lg-8 col-xl-6">
-                <div class="title-box-center">
-                    <h6 class="sub-title line-top-center mrb-10">Our Services</h6>
-                    <h2 class="title">Features</h2>
-                </div>
-            </div>
-            <div class="col"></div>
-        </div>
-    </div>
-</div>
+{{--<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col"></div>--}}
+{{--            <div class="col-lg-8 col-xl-6">--}}
+{{--                <div class="title-box-center">--}}
+{{--                    <h6 class="sub-title line-top-center mrb-10">Our Services</h6>--}}
+{{--                    <h2 class="title">Features</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col"></div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 
 {{--<div class="ecosystem">--}}
@@ -228,27 +318,71 @@
 
 {{-- ----------------------------------------------- Ecosystem ------------------------------------------ --}}
 
-<section id="ecosystem">
-    <br><br><br><br><br>
+{{--<section id="ecosystem">--}}
+{{--    <br><br><br><br><br>--}}
 
-</section>
+{{--</section>--}}
 
 
-<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-lg-8 col-xl-6">
-                <div class="title-box-center">
-                    <h6 class="sub-title line-top-center mrb-10">What We Provide</h6>
-                    <h2 class="title">Courses</h2>
+{{--<div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col"></div>--}}
+{{--            <div class="col-lg-8 col-xl-6">--}}
+{{--                <div class="title-box-center">--}}
+{{--                    <h6 class="sub-title line-top-center mrb-10">What We Provide</h6>--}}
+{{--                    <h2 class="title">Courses</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col"></div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+
+<section
+    class="pdt-110 pdb-90 pdb-md-110"
+    data-background=""
+    data-overlay-primary-color="94"
+>
+    <div class="section-content">
+        <div class="container">
+            <h5 class="side-line-left white text-white mrb-40">
+                Courses
+            </h5>
+            @foreach($ecosystems as $ecosystem)
+            <div class="row">
+                <div
+                    class="col-md-12 col-lg-6 col-xl-7 wow fadeInUp"
+                    data-wow-delay="0ms"
+                    data-wow-duration="800ms"
+                >
+
+                    <h3 class="text-white mrb-25">{{ $ecosystem->title_en }}</h3>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="text-white mrb-35" style="text-align:justify">
+                                {{ $ecosystem->content_en }}
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
+{{--                <div--}}
+{{--                    class="col-md-8 col-lg-6 col-xl-5 wow fadeInUp"--}}
+{{--                    data-wow-delay="200ms"--}}
+{{--                    data-wow-duration="800ms"--}}
+{{--                >--}}
+{{--                    <div class="company-img">--}}
+{{--                        <img src="{{ asset('storage/'. $ecosystem->image) }}"/>--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
-            <div class="col"></div>
+            @endforeach
+
         </div>
     </div>
-</div>
-
+</section>
 
 {{--<div class="ecosystem">--}}
 {{--    <img src="{{ asset('images/ecosystem.png') }}" alt="" class="img-fluid">--}}

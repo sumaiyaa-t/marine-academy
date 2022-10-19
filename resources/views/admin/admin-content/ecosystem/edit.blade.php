@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.main')
 
 @section('content')
-    <h4>Edit Ecosystem Contents</h4>
+    <h4>Edit Courses Contents</h4>
     <hr>
 
     <div>
